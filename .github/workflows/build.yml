@@ -60,7 +60,7 @@ jobs:
         with:
           name: Skia-${{ env.release }}-linux-${{ matrix.build_type }}-x64.zip
           path: '*.zip'
-      - run: ./release.sh
+      - run:  ./release.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
